@@ -3,6 +3,8 @@
 #include <pthread.h>
 
 /*
+*  Every thread just says hi by printing his id
+*
 *  Why long my_id and not just int?
 *
 *  Because we are working on 64bit architectures and sizeof(void*) !=  sizeof(int)

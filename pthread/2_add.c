@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <pthread.h>
 
+/*
+*  Πρόσθεση Διανυσμάτων C = A + B
+*/
+
 int *A, *B, *C;
 int numOfThreads, N;
 

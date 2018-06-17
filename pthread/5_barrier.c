@@ -2,6 +2,51 @@
 #include <stdlib.h>
 #include <pthread.h>
 
+/*
+*  Συγχρονισμός με φράγμα
+
+Η έξοδος που θέλω είναι:
+
+Hello from the main thread
+I'm a thread 0
+I'm a thread 1
+I'm a thread 3
+I'm a thread 4
+I'm a thread 5
+I'm a thread 2
+I'm a thread 6
+I'm a thread 7
+5
+7
+2
+6
+3
+0
+1
+4
+
+και όχι η αρχική:
+
+Hello from the main thread
+I'm a thread 0
+I'm a thread 2
+I'm a thread 6
+I'm a thread 7
+5
+7
+I'm a thread 1
+2
+I'm a thread 5
+6
+3
+I'm a thread 4
+0
+I'm a thread 3
+1
+4
+
+*/
+
 pthread_barrier_t barrier;
 
 void* thread_runner(void* p)

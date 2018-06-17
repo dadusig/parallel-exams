@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <pthread.h>
 
+/*
+*  Αθροισμα του διανυσματος Α
+*/
+
 int *A;
 int numOfThreads, N;
 

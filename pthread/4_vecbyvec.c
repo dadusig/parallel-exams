@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <pthread.h>
 
+/*
+*  Πολλαπλασιαμός Διανυσμάτων παράγει εναν βαθμωτό a = A dot B
+*/
+
 int *A, *B;
 int numOfThreads, N;
 
