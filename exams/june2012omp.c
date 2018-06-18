@@ -33,13 +33,13 @@ int main(int argc, char const *argv[])
 		#pragma omp single
 		average = sum/N;
 
-		#pragma omp for
+		#pragma omp for nowait
 		for (i = 0; i < N; i++)
 		{
 			X[i] = X[i] - average;
 		}
 
-		#pragma omp for
+		#pragma omp for nowait
 		for (i = 0; i < N; i++)
 		{
 			Y[i] = Y[i] / average;
